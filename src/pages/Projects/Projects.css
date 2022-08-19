@@ -1,0 +1,24 @@
+.projects{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects_title{
+    color: var(--lightText);
+    text-align: center;
+}
+
+.project_card{
+    color: var(--lightText);
+}
+
+.project_pack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

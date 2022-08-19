@@ -1,0 +1,94 @@
+
+/*     
+    @media (max-width: 426px){
+        .home{
+            height: 100vh;
+            width: 100%;
+            background-image: url('../../assets/background.jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .home_aboutme{
+            color: var(--lightText);
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .home_aboutme p{
+            width: 400px;
+            font-size: 0.9em;
+            line-height: 1.8em;
+        }
+        
+        .home_about_button{
+            background-color: transparent;
+            color: var(--gold);
+            cursor: pointer;
+        }
+    } */
+
+    @media (min-width: 1025px){
+        .about{
+            min-height: 100vh;
+            width: 100%;
+            background-color: var(--black);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+         .about_text{
+            color: var(--lightText);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 1em;
+        }
+        
+        .about_text p{
+            width: 34em;
+            font-size: 1em;
+            line-height: 1.9em;
+            margin-top: 1em;
+        }
+
+        .link_to_projects{
+            text-decoration: none;
+            color: var(--gold);
+
+        }
+
+        .about_midias_profissionais{
+            display: flex;
+        }
+
+        .about_midias_profissionais a{
+            text-decoration: none;
+            color: var(--mediumText);
+            margin: 3em;
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5em;
+        }
+
+        .about_midias_profissionais a p{
+            margin-top: 1em;
+        }
+
+        /*
+        .home_about_button{
+            background-color: transparent;
+            color: var(--gold);
+            cursor: pointer;
+        } */
+        }
