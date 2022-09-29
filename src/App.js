@@ -1,19 +1,26 @@
-import React from 'react';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import { Outlet } from 'react-router-dom';
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
+import Contacts from "./pages/Contacts/Contacts";
 
-import './App.css';
+import Header from "./components/Header/Header";
 
+import "./App.css";
 
 function App() {
 
   return (
     <div className="App">
       <Header/>
-      <Outlet/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contacts />} />
+      </Routes>
     </div>
   );
 }

@@ -1,76 +1,118 @@
-@media (min-width: 1025px){
-    .home{
-        height: 100vh;
-        width: 100%;
-        background-image: url('../../assets/background.jpg');
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .home_aboutme{
-        color: var(--lightText);
-        width: 100%;   
-        display: flex;
-        justify-content: right;
-        text-align: center;
-    }
-    
-    .home_aboutme p{
-        width: 550px;
-        font-size: 0.9em;
-        margin-right: 8em;
-        line-height: 1.8em;
-    }
-    
-    .home_about_button{
-        background-color: transparent;
-        color: var(--gold);
-        cursor: pointer;
-        border: none;
-    }
+@media (max-width: 426px) {
+  .home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .all_link_button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        color: var(--lightText);
-        font-size: 1.5em;
-        margin-left: 25em;
-    }
-    }
-    
-    @media (max-width: 426px){
-        .home{
-            height: 100vh;
-            width: 100%;
-            background-image: url('../../assets/background.jpg');
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .home_aboutme{
-            color: var(--lightText);
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .home_aboutme p{
-            width: 400px;
-            font-size: 0.9em;
-            line-height: 1.8em;
-        }
-        
-        .home_about_button{
-            background-color: transparent;
-            color: var(--gold);
-            cursor: pointer;
-        }
-    }
+  .all_link_button {
+    text-decoration: none;
+    color: var(--lightText);
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 23em;
+  }
+
+  .home_about_button {
+    background-color: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    border: none;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .all_link_button {
+    text-decoration: none;
+    color: var(--lightText);
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 24em;
+  }
+
+  .home_about_button {
+    background-color: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    border: none;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .all_link_button {
+    text-decoration: none;
+    color: var(--lightText);
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10em 0 0 22em;
+  }
+
+  .home_about_button {
+    background-color: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    border: none;
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .all_link_button {
+    text-decoration: none;
+    color: var(--lightText);
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10em 0 0 22em;
+  }
+
+  .home_about_button {
+    background-color: transparent;
+    color: var(--gold);
+    cursor: pointer;
+    border: none;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}

@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
-
-import { FaGithub, FaLinkedin, FaDev} from "react-icons/fa";
 import './About.css';
 
 
@@ -12,33 +8,17 @@ const About = () => {
   return (
     <div className='about'>
       <div className="about_text">
-        <h2>Sobre mim</h2>
-        <p>Designer desde 2001, pós graduada em Gestão
-          da Qualidade e Produtividade e formada como Full Stack Web Developer pela
-          Ironhack no campus de São Paulo/Brasil. Me
-          destaco em solucionar problemas, tenho experiência
-          em code review, utilizando boas práticas e muita
-          criatividade no desenvolvimento. Acostumada em
-          trabalhar em equipe, usando sempre a metodologia ágil Kanban.
+        <p className='title'>Sobre mim</p>
+        <p className='about_p'>Graduada em Design desde 2001, pós-graduada em Gestão de Qualidade e Produtividade, formada como Full Stack Web Dev pelo 
+          Bootcamp da Ironhack, desde maio de 2022 e mais cursos na área de Desenvolvimento Web. Me destaco em solucionar 
+          problemas com criatividade, utilizando boas práticas de programação e preocupação com uma boa 
+          experiência do usuário (UX). 
+          Acostumada a trabalhar em equipe, utilizo metodologia ágil (kanban) para planejamentos e andamento de projetos.  
           Trabalho com HTML, CSS, Javascript puro, React JS, fazendo uso de hooks, API REST,  
-          styled components, libs de icons e outras habilidades mais. <br/>
+          styled components, Material UI, Figma, Git, GitHub, MERN Stack. <br/>
           Conheça alguns dos meus 
          <Link to='/projects' className='link_to_projects'> projetos</Link> :)
         </p>
-      </div>
-      <div className='about_midias_profissionais'>
-        <a href="https://github.com/Juliana-Madeira" target='_blank'rel="noreferrer" >
-          GitHub 
-          <p><FaGithub size={25}/></p>
-        </a>
-        <a href="https://www.linkedin.com/in/juliana-g-madeira/" target='_blank' rel="noreferrer">
-          Linkedin
-          <p><FaLinkedin size={25}/></p>
-        </a>
-        <a href="/" target='_blank' rel="noreferrer">
-          Currículo
-          <p><FaDev size={25}/></p>
-        </a>
       </div>
     </div>
   )

@@ -1,31 +1,70 @@
-import React from 'react';
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
+import React from "react";
+import ReactWhatsapp from "react-whatsapp";
+import { FaGithub, FaLinkedin, FaDev } from "react-icons/fa";
 
-import './Contacts.css';
+import "./Contacts.css";
 
 const Contacts = () => {
   return (
-    <div className='contact'>
-      <Header/>
-      <form className='contact_form'>
-        <select name="assunto" id="assunto">
-          <option value="" >Selecione...</option>
-          <option value="">Dúvidas</option>
-          <option value="">Orçamentos</option>
-          <option value="">Convites CLT</option>
-          <option value="">Convites PJ</option>
-          <option value="">Outros assuntos</option>
-          <option value="">Global Contact</option>
-        </select>
-        <input type="email" placeholder='Email' required/>
-        <input type= "text" placeholder='Whatsapp'/>
-        <textarea name="textarea" id="" cols="30" rows="30" placeholder='Deixe sua mensagem...'></textarea>
-      </form>
-      <div>Whatsapp com icon pra entrar em contato direto comigo no whats web ou celular mesmo</div>
-      <Footer/>
-    </div>
-  )
-}
+    <div className="contact">
+      <p className="title">Contato</p>
+      <div className="contact_midias">
+        <a
+          href="https://github.com/Juliana-Madeira"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+          <p>
+            <FaGithub size={35} />
+          </p>
+        </a>
 
-export default Contacts
+        <a
+          href="https://www.linkedin.com/in/juliana-g-madeira/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+          <p>
+            <FaLinkedin size={35} />
+          </p>
+        </a>
+        <a
+          href="https://docs.google.com/document/d/1MhHxBV6euy7FQXUJb1OETh7dJXf7TiNg4s4k5ZcEtQY/edit?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Currículo
+          <p>
+            <FaDev size={35} />
+          </p>
+        </a>
+        <div className="contact_midias_p">
+          <p className="contact_midias_p_text">Whatsapp</p>
+          <p
+            style={{
+              backgroundColor: "var(--mediumText)",
+              color: "var(--mediumText)",
+              width: 35,
+              textAlign: "center",
+            }}
+          >
+            <ReactWhatsapp
+              number="55-11987292905"
+              message="Olá!"
+              style={{
+                width: 35,
+                height: 35,
+                background: "transparent",
+                border: "none",
+              }}
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contacts;
